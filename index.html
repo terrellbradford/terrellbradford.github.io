@@ -1,19 +1,48 @@
 <!DOCTYPE html>
+
+<!-- CSS Stylesheets with Relative Paths -->
+
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Terrell Bradford</title>
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <h1>Terrell Bradford</h1>
-  <a>
-  <img src="../assets/download.jpg"></img>
-  </a>  
-  
-    <p> I am an Electrical Engineer with a history in Manufacturing, managing projects from prototyping, implementation to production. I am also a Data Anaylsis concentrated but not limited to Python. I am passionate about self learning and continuous improvment.
-    </p>
+  <header>
+    <h1>Student Bio</h1>
+  </header>
+
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <img id="bio-image" src="assets/download.jpg" width="100" height="125" alt="Terrell Bradford"><br>
+        <br><h2 id="bio-name">Terrell Bradford</h2>
+        <h3 id="detail">Electrial Engineer|Data Analyst</h3>
+        <h4 id="location">Cleveland, Ohio Metropolitan Area</h4>
+      </section>
+      <br><p>I am an Electrical Engineer with a history in Manufacturing, managing projects from prototyping, implementation to production. 
+        B.S received from The University of Akron. I am also a Data Analyst that loves cleaning, organizing, and visualizing data. 
+        Data Analytics and Visualization through the Case Western Reserve University and Trilogy Bootcamp. 
+        I am passionate about self learning and continuous improvment.</p>
+    </section>
+
+    <aside id="contact-info">
+      <br><h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="#">terrell.bradford@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="#">https://github.com/terrellbradford</a></li>
+        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+      </ul>
+    </aside>
+  </main>
+
 </body>
 
 </html>
